@@ -1,15 +1,12 @@
 def quicksort(array, from=0, to=nil)
-
     is_number = array.all? {|i| i.is_a?(Numeric) }
-
-    if is_number != true
-      abort("Błędny typ danych w tablicy. Wszystkie muszą być int lub float!")
-    end
-
+  
     if to == nil
         to = array.count - 1
     end
-
+  if is_number != true
+      abort("zły typ danych")
+    end
     if from >= to
         return
     end
@@ -17,7 +14,6 @@ def quicksort(array, from=0, to=nil)
     pivot = array[from]
     min = from
     max = to
-
     free = min
 
     while min < max
@@ -43,12 +39,11 @@ def quicksort(array, from=0, to=nil)
     end
 
     array[free] = pivot
-
     quicksort array, from, free - 1
     quicksort array, free + 1, to
 end
 
-a = [1, 2, 3, 3.4, 4, 5, 6, 7, 8, 9, 9.1, 10, 11, 11.8, 12, 13, 14, 15].shuffle
+a = [3, 24, 11, 3.4, 6, 5, 99, 7, 8, 2, 9.1, 0, 121, 1.4, 23, 13].shuffle
 puts "Tablica:"
 print a
 puts
