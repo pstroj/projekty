@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    benchmark-perf (0.2.1)
     diff-lcs (1.2.5)
     mini_portile2 (2.1.0)
     nokogiri (1.6.8.1)
@@ -10,6 +11,9 @@ GEM
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
       rspec-mocks (~> 3.5.0)
+    rspec-benchmark (0.2.0)
+      benchmark-perf (~> 0.2.0)
+      rspec (>= 3.0.0, < 4.0.0)
     rspec-core (3.5.4)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
@@ -27,6 +31,7 @@ DEPENDENCIES
   nokogiri
   rack (~> 1.1)
   rspec
+  rspec-benchmark
 
 BUNDLED WITH
    1.13.6
