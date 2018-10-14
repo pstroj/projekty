@@ -1,4 +1,4 @@
-## Testowanie aplikacji w Ruby, [strojwaspiotr@gmail.com]
+## Testowanie aplikacji w Ruby, []
 
 1. [ ] [Notatki z Ruby](ruby.md)
 2. [ ] [Notatki z RSpec](rspec.md)
